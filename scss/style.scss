@@ -262,3 +262,236 @@
         left: 510px;
     }
 }
+
+.testimonial {
+    background-color: $blue-light;
+    &-wrapper {
+        padding: 99px 0;
+    }
+    &-subtitle {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        &_title {
+            margin: 4px 0 40px;
+        }
+    }
+    &-items {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    &-item {
+        background-color: #fff;
+        max-width: 600px;
+        padding: 30px 33px 47px 25px;
+        &:last-child {
+            max-width: 576px;
+            padding: 30px 33px 70px 25px;
+        }
+        &_text {
+            font-size: 19px;
+            max-width: 523px;
+            &:last-child {
+                max-width: 475px;
+            }
+        }
+        &_customer {
+            background-color: $blue-dark;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 20px 30px 26px;
+            &-left, &-right {
+                display: flex;
+                gap: 20px;
+            }
+        }
+        &_name {
+            font-size: 20px;
+            color: #fff;
+        }
+        &_country {
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0.42px;
+            color: #fff;
+            margin-top: 7px;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    gap: 15px;
+}
+
+.advantages {
+    &-wrapper {
+        padding-top: 99px;
+    }
+    &-subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-item {
+        max-width: 369px;
+        margin-bottom: 49px;
+    }
+}
+
+.box {
+    border: 2px solid $blue;
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    &-internal {
+        background-color: $blue;
+        height: 84px;
+        width: 84px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.discount {
+    background-color: $blue-light;
+    &-wrapper {
+        padding: 178px 0;
+    }
+    &-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 70px 50px 0;
+        background-color: #fff;
+        &_input {
+            height: 65px;
+            width: 455px;
+            border: 2px solid $blue;
+            color: $blue;
+            font-family: $manrope;
+            font-size: 18px;
+            padding-left: 41px;
+            background-image: url(.../assets/icon/person.svg);
+            background-size: 41px 47px;
+            background-repeat: no-repeat;
+            background-position: 30px 1rem;
+            &-comment {
+                height: 130px;
+                border: 2px solid $blue;
+                color: $blue;
+                font-family: $manrope;
+                font-size: 18px;
+                padding-left: 41px;
+                &::placeholder {
+                    font-family: $manrope;
+                    color: $blue;
+                    margin-left: 40px;
+                }
+            }
+            &::placeholder {
+                font-family: $manrope;
+                color: $blue;
+                margin-left: 40px;
+            }
+        }
+        &_btn {
+            height: 65px;
+            width: 455px;
+            margin-bottom: 65px;
+        }
+    }
+    &-subtitle {
+        &_title {
+            max-width: 445px;
+            letter-spacing: 0.45px;
+        }
+        &_info {
+            max-width: 541px;
+        }
+    }
+    &-flat {
+        padding-top: 95px;
+        &_discount {
+            display: flex;
+            &-left {
+                border: 2px solid $blue;
+                border-right: none;
+                background-color: #fff;
+                padding: 33px 32px 39px 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            &-mail, &-call {
+                display: flex;
+                gap: 20px;
+                &_info {
+                    color: $black;
+                    font-size: 14px;
+                    &-text {
+                        letter-spacing: 1.2px;
+                        font-size: 15px;
+                        color: $black;
+                    }
+                }
+            }
+            &-right {
+                background-color: $black-total;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 22px 25px 24px 25px;
+                &_subtitle {
+                    color: #fff;
+                    line-height: 1.5;
+                    letter-spacing: 1.5px;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                }
+                &_percent {
+                    font-family: $manrope;
+                    font-size: 65px;
+                    letter-spacing: 0.78px;
+                    color: #fff;
+                }
+                &_text {
+                    letter-spacing: 1.8px;
+                    line-height: 1.5;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+    padding-top: 9px;
+    &-dot {
+        background-color: $blue;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+    }
+}
