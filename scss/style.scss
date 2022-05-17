@@ -165,7 +165,7 @@
         gap: 12px;
     }
     &-item {
-        border: 2px solid $black-total;
+        border: 2px solid $blue-dark;
         background-color: #fff;
         padding: 20px 52px;
         display: flex;
@@ -390,10 +390,6 @@
             font-family: $manrope;
             font-size: 18px;
             padding-left: 41px;
-            background-image: url(.../assets/icon/person.svg);
-            background-size: 41px 47px;
-            background-repeat: no-repeat;
-            background-position: 30px 1rem;
             &-comment {
                 height: 130px;
                 border: 2px solid $blue;
@@ -455,7 +451,7 @@
                 }
             }
             &-right {
-                background-color: $black-total;
+                background-color: $blue-dark;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -484,6 +480,48 @@
     }
 }
 
+.name, .email, .number, .text, .comment {
+    &-icon {
+        position: relative;
+        &::before {
+            content: '';
+            background-image: url(../assets/icon/person.svg);
+            width: 41px;
+            height: 47px;
+            position: absolute;
+            top: -85px;
+        }
+    }
+}
+.email {
+    &-icon {
+        &::before {
+            background-image: url(../assets/icon/email.svg);
+        }
+    }
+}
+.number {
+    &-icon {
+        &::before {
+            background-image: url(../assets/icon/phone.svg);
+        }
+    }
+}
+.text {
+    &-icon {
+        &::before {
+            background-image: url(../assets/icon/book.svg);
+        }
+    }
+}
+.comment {
+    &-icon {
+        &::before {
+            background-image: url(../assets/icon/comment.svg);
+            top: -150px;
+        }
+    }
+}
 .dots {
     display: flex;
     gap: 6px;
@@ -493,5 +531,130 @@
         height: 6px;
         width: 6px;
         border-radius: 50%;
+    }
+}
+
+.ourblog {
+    &-wrapper {
+        padding-top: 102px;
+    }
+    &-subtitle {
+        text-align: center;
+        padding-bottom: 66px;
+    }
+    &-items {
+        padding-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    &-item {
+        background-color: $blue-light;
+        &_title {
+            letter-spacing: 0.44px;
+            line-height: 1.4;
+            margin: 15px auto 14px;
+        }
+        &_text {
+            letter-spacing: 0.36px;
+            line-height: 1.5;
+            max-width: 327px;
+        }
+        &_box {
+            padding: 29px 24px 34px 26px;
+            &-subtitle {
+                display: flex;
+                gap: 54px;
+            }
+        }
+        &_date {
+            font-size: 13px;
+            color: $blue;
+        }
+        &_name {
+            font-size: 13px;
+            color: $blue;
+            &::before {
+                content: '';
+                position: absolute;
+                background: $black;
+                height: 4px;
+                width: 30px;
+                margin: 8px -42px;
+            }
+        }
+    }
+    &-btn {
+        margin: 12px 480px 110px 480px;
+    }
+}
+
+.drafted {
+    background-color: $black-total;
+    text-align: center;
+    padding: 19px 0 20px;
+    &-by {
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+    }
+}
+.info {
+    background-color: $blue-dark;
+    padding-top: 70px;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding-bottom: 43px;
+    }
+    &-social {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        &_logo {
+            cursor: pointer;
+        }
+        &_rectangle {
+            height: 55px;
+            width: 55px;
+            border: 2px solid $blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &-items {
+        padding: 60px 0 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        &_menu {
+            color: #fff;
+            margin-bottom: 27px;
+            letter-spacing: 0.352px;
+            line-height: 1.4;
+        }
+        &_title {
+            min-width: 73px;
+            color: #fff;
+            font-size: 17px;
+            line-height: 1.5;
+            margin-bottom: 9px;
+            &-keep {
+                color: #fff;
+                font-size: 17px;
+                line-height: 1.5;
+                max-width: 215px;
+                margin-bottom: 27px;
+            }
+        }
+        &_box {
+            display: flex;
+            gap: 30px;
+        }
     }
 }
